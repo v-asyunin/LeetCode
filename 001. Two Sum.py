@@ -1,19 +1,6 @@
 class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
 
-        # O(n2) Solution
-        # weFindIt = False
-        # for i in range(len(nums)):
-        #     for j in range(len(nums)):
-        #         if nums[i] + nums[j] == target and i != j:
-        #             weFindIt = True
-        #             break
-        #     if weFindIt:
-        #         break
-        #
-        # if weFindIt:
-        #     return [i, j]
-
         # fast Solution
         dict_ = {}
         i=0
@@ -54,3 +41,17 @@ print('nums=' + str(nums), 'target='+str(target), 'answer='+ str(x.twoSum(nums, 
 nums = [9, 2, 6, 4, 5, 3, 9]
 target = 18
 print('nums=' + str(nums), 'target='+str(target), 'answer='+ str(x.twoSum(nums, target)))
+
+# O(n2) Solution
+
+# weFindIt = False
+# for i in range(len(nums)):
+#     for j in range(len(nums)):
+#         if nums[i] + nums[j] == target and i != j:
+#             weFindIt = True
+#             break
+#     if weFindIt:
+#         break
+#
+# if weFindIt:
+#     return [i, j]

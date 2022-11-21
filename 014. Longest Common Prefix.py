@@ -28,8 +28,15 @@ class Solution:
         return cprefix
 
 x = Solution()
+
 arr = ["flower","flow","flight"]
+print(arr, 'ans=', x.longestCommonPrefix(arr))
+
 arr = ["dog","racecar","car"]
+print(arr, 'ans=', x.longestCommonPrefix(arr))
+
 arr = []
+print(arr, 'ans=', x.longestCommonPrefix(arr))
+
 arr = ['q', 'q', '']
-print(x.longestCommonPrefix(arr))
+print(arr, 'ans=', x.longestCommonPrefix(arr))
