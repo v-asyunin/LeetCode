@@ -10,5 +10,6 @@ class Solution:
                 isPalindrom = False
 
         return isPalindrom
+
 s = Solution()
 print(s.isPalindrome(13241))
