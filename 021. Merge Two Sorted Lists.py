@@ -7,6 +7,14 @@ class ListNode:
         self.val = val
         self.next = next
 
+    def __str__(self):
+        s = ''
+        l = self
+        while l:
+            s += str(l.val)
+            l = l.next
+        return s
+
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         root = ListNode()
